@@ -1,0 +1,11 @@
+production:
+  access_key_id: <%= ENV['SAKURA_STORAGE_ID'] %>
+  secret_access_key: <%= ENV['SAKURA_STORAGE_KEY'] %>
+  bucket: <%= ENV['SAKURA_BUCKET_NAME'] %>
+  folder: files
+  endpoint: b.sakurastorage.jp
+  secure: true
+  private: true
+  expires:
+  proxy: false
+  thumb_folder:
