@@ -1,0 +1,14 @@
+version: '2'
+services:
+  redmine:
+    image: sacloud/redmine:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - SAKURA_STORAGE_ID
+      - SAKURA_STORAGE_KEY
+      - SAKURA_BUCKET_NAME
+      - REDMINE_DB_POSTGRES
+      - POSTGRES_ENV_POSTGRES_USER
+      - POSTGRES_ENV_POSTGRES_PASSWORD
+      - POSTGRES_ENV_POSTGRES_DB
